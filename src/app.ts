@@ -12,12 +12,18 @@ export function createApp() {
   const app = express()
 
   app.use(helmet())
-  app.use(
-    cors({
-      origin: true,
-      credentials: true,
-    }),
-  )
+  const corsOrigins = process.env.CORS_ORIGINS?.split(',')
+    .map((s) => s.trim())
+    .filter(Boolean)
+  const corsMw = cors({
+    origin: corsOrigins?.length ? corsOrigins : true,
+    credentials: true,
+    methods: ['GET', 'HEAD', 'POST', 'PATCH', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    optionsSuccessStatus: 204,
+  })
+  app.use(corsMw)
+  app.options('*', corsMw)
   app.use(express.json({ limit: '2mb' }))
   app.use(morgan('dev'))
 

@@ -183,6 +183,15 @@ router.post('/verify-phone', async (req, res) => {
   }
 })
 
+/** Helps debug 405: browsers may turn POST→GET on some redirects; static hosts return 405 on POST. */
+router.get('/login', (_req, res) => {
+  res.setHeader('Allow', 'POST')
+  return res.status(405).json({
+    message:
+      'Login must use POST. If you opened this URL in a tab or see this from the app, set VITE_API_BASE_URL to your API base (e.g. https://your-api.railway.app) — not the Vercel frontend URL — and use https if your host redirects http (redirects can strip POST).',
+  })
+})
+
 router.post('/login', async (req, res) => {
   try {
     const { email, password } = req.body as { email?: string; password?: string }

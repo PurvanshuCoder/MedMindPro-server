@@ -15,10 +15,18 @@ const ai_1 = require("./routes/ai");
 function createApp() {
     const app = (0, express_1.default)();
     app.use((0, helmet_1.default)());
-    app.use((0, cors_1.default)({
-        origin: true,
+    const corsOrigins = process.env.CORS_ORIGINS?.split(',')
+        .map((s) => s.trim())
+        .filter(Boolean);
+    const corsMw = (0, cors_1.default)({
+        origin: corsOrigins?.length ? corsOrigins : true,
         credentials: true,
-    }));
+        methods: ['GET', 'HEAD', 'POST', 'PATCH', 'DELETE', 'OPTIONS'],
+        allowedHeaders: ['Content-Type', 'Authorization'],
+        optionsSuccessStatus: 204,
+    });
+    app.use(corsMw);
+    app.options('*', corsMw);
     app.use(express_1.default.json({ limit: '2mb' }));
     app.use((0, morgan_1.default)('dev'));
     app.get('/health', (_req, res) => res.json({ ok: true }));
