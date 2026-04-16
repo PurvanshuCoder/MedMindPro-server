@@ -1,3 +1,14 @@
-2026/04/13-09:55:24.211 3198 Reusing MANIFEST C:\Users\bpurv\OneDrive\Desktop\newonw\smart-medication-manager\backend\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
-2026/04/13-09:55:24.219 3198 Recovering log #4
-2026/04/13-09:55:24.225 3198 Reusing old log C:\Users\bpurv\OneDrive\Desktop\newonw\smart-medication-manager\backend\.wwebjs_auth\session\Default\Local Storage\leveldb/000004.log 
+2026/04/16-19:48:25.432 98ac Reusing MANIFEST C:\Users\bpurv\OneDrive\Desktop\newonw\smart-medication-manager\backend\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
+2026/04/16-19:48:25.446 98ac Recovering log #9
+2026/04/16-19:48:25.460 98ac Reusing old log C:\Users\bpurv\OneDrive\Desktop\newonw\smart-medication-manager\backend\.wwebjs_auth\session\Default\Local Storage\leveldb/000009.log 
+2026/04/16-19:57:52.484 86fc Level-0 table #13: started
+2026/04/16-19:57:52.493 86fc Level-0 table #13: 20889 bytes OK
+2026/04/16-19:57:52.496 86fc Delete type=0 #9
+2026/04/16-19:57:52.498 86fc Compacting 4@0 + 0@1 files
+2026/04/16-19:57:52.506 86fc Generated table #14@0: 119 keys, 11641 bytes
+2026/04/16-19:57:52.506 86fc Compacted 4@0 + 0@1 files => 11641 bytes
+2026/04/16-19:57:52.508 86fc compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/04/16-19:57:52.509 86fc Delete type=2 #3
+2026/04/16-19:57:52.509 86fc Delete type=2 #7
+2026/04/16-19:57:52.509 86fc Delete type=2 #10
+2026/04/16-19:57:52.509 86fc Delete type=2 #13

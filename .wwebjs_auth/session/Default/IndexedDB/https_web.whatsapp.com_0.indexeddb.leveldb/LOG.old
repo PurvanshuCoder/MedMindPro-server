@@ -1,3 +1,6 @@
-2026/04/13-03:25:33.488 6210 Reusing MANIFEST C:\Users\bpurv\OneDrive\Desktop\newonw\smart-medication-manager\backend\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2026/04/13-03:25:33.489 6210 Recovering log #487
-2026/04/13-03:25:33.497 6210 Reusing old log C:\Users\bpurv\OneDrive\Desktop\newonw\smart-medication-manager\backend\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000487.log 
+2026/04/16-19:29:52.120 796c Reusing MANIFEST C:\Users\bpurv\OneDrive\Desktop\newonw\smart-medication-manager\backend\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/16-19:29:52.122 796c Recovering log #723
+2026/04/16-19:29:52.175 796c Reusing old log C:\Users\bpurv\OneDrive\Desktop\newonw\smart-medication-manager\backend\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000723.log 
+2026/04/16-19:29:52.176 796c Delete type=2 #721
+2026/04/16-19:29:52.176 796c Delete type=2 #722
+2026/04/16-19:29:52.176 796c Delete type=2 #724
